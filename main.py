@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Configure Gemini (you'll need to set your API key)
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyBjG-cwIAhBqm_GOIAul0ry7JmTuLMvSOs")
+GEMINI_API_KEY = "AIzaSyBjG-cwIAhBqm_GOIAul0ry7JmTuLMvSOs"
 if GEMINI_API_KEY and GEMINI_API_KEY != "AIzaSyBjG-cwIAhBqm_GOIAul0ry7JmTuLMvSOs":
     genai.configure(api_key=GEMINI_API_KEY)
 
