@@ -17,8 +17,7 @@ logger = logging.getLogger(__name__)
 
 # Configure Gemini (you'll need to set your API key)
 GEMINI_API_KEY = "AIzaSyBjG-cwIAhBqm_GOIAul0ry7JmTuLMvSOs"
-if GEMINI_API_KEY and GEMINI_API_KEY != "AIzaSyBjG-cwIAhBqm_GOIAul0ry7JmTuLMvSOs":
-    genai.configure(api_key=GEMINI_API_KEY)
+genai.configure(api_key=GEMINI_API_KEY)
 
 class MatchingStrategy(Enum):
     RULE_BASED = "rule_based"
